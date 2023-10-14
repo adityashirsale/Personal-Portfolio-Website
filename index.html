@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(245, 245, 252);
+            color: rgb(6, 1, 1);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 65px;
+            background-color: rgb(251, 248, 248);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: rgb(11, 3, 3);
+        }
+
+        nav ul li a:hover {
+            color: rgb(114, 114, 163);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background: violet;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 170px 0;
+
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+        }
+
+        .leftSection .buttons{
+            padding: 50px 0;
+        }
+
+        .leftSection .btn{
+            padding: 12px;
+            background: violet;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+
+        .rightSection img {
+            width: 80%;
+
+        }
+
+        .purple {
+            color: rgb(87, 46, 126);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(87, 46, 126);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 365vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            background: rgb(254, 252, 252);
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: rgb(12, 0, 0);
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            background-color: rgb(247, 247, 248);
+            
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer >div{
+            width: 223px;
+        }
+
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        form input, form textarea{
+            width: 100%;
+            border: 0;
+            outline: none;
+            background: rgb(243, 225, 243);
+            padding: 15px;
+            margin: 15px 0;
+            color: rgb(17, 14, 17);
+            font-size: 18px;
+            border-radius: 6px;
+        }
+
+        .secondSection .btn {
+            padding: 12px;
+            background: violet;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        
+        
+
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Aditya Shirsale</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Aditya</span>
+                <div>and I am a</div>
+                <span id="element"></span>
+                <div class="buttons">
+                   <button class="btn" onclick="document.location='https://drive.google.com/file/d/1twFf_JWcHrnZPUI0tBJzqfQBB152xZ4m/view?usp=sharing'">Download Resume</button>
+                    <button class="btn" onclick="document.location='https://github.com/adityashirsale'">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="add1.jpg" alt="">
+
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray"> What I have done so far</span>
+            <h1>Qualification</h1>
+            <div class="qualification_sections">
+
+                <!--==================== QUALIFICATION  CONTENT 1 ====================-->
+                <div class="qualification_content qualification_active" data-content="" id="education">
+                <!--==================== QUALIFICATION  1====================-->
+                <div class="qualification_data">
+                  <div>
+                    <h3 class="qualification_title">AISSMS Institute of Information Technology, Pune</h3>
+                    <span class="qualification_subtitle">Electrical Engineering</span>
+                    <div class="qualification_calender">
+                      <i class="uil uil-calendar-alt"></i>
+                      2019 - 2023
+                    </div>
+                  </div>
+        
+                  <div>
+                    <span class="qualification_rounder"></span>
+                    <span class="qualification_line"></span>
+                  </div>
+                </div>
+        
+        
+                <!--==================== QUALIFICATION 2 ====================-->
+                <div class="qualification_data">
+                  <div></div>
+        
+                  <div>
+                    <span class="qualification_rounder"></span>
+                    <span class="qualification_line"></span>
+                  </div>
+        
+                  <div>
+                    <h3 class="qualification_title">M J College, Jalgaon</h3>
+                    <span class="qualification_subtitle">HSC</span>
+                    <div class="qualification_calender">
+                      <i class="uil uil-calendar-alt"></i>
+                      2017 - 2019
+                    </div>
+                  </div>
+                </div>
+        
+                <!--==================== QUALIFICATION  3====================-->
+                <div class="qualification_data">
+                  <div>
+                    <h3 class="qualification_title">A T Zambare School, Jalgaon</h3>
+                    <span class="qualification_subtitle">SSC</span>
+                    <div class="qualification_calender">
+                      <i class="uil uil-calendar-alt"></i>
+                      2008 - 2017
+                    </div>
+                  </div>
+        
+                  <div>
+                    <span class="qualification_rounder"></span>
+                    <!--span class="qualification_line"-->
+                  </div>
+                </div>
+                </div>
+
+
+
+
+
+
+
+
+            <hr>
+            <h1>Work Experience</h1>
+            <span class="text-black">DWARKA INDUSTRIES-Internship</span>
+            <ul>
+                December 2021 - January 2022
+                <ul>Achieved the knowledge of Manufacturing and repairing activity as well as testing process of the Distribution Transformers.</ul>
+            </ul>
+            <hr>
+
+            <h1>Professional Course / Workshops attended</h1>
+            <ul>
+                <li>Post graduate diploma in Embedded Systems design and development at Indian Institute of Embedded Systems - IIES, Bangalore (Pursuing).</li>
+                <li>State Level IoT Based Project Competition organized by Innovation and Incubation Centre, Sanjay Ghodawat University, Kolhapur.</li>
+            </ul>
+            <hr>
+
+            <h1>Technical Skills</h1>
+            <ul>
+                <li>C,C++</li>
+                <li>Python</li>
+                <li>AutoCAD</li>
+                <li>HMI Programming/Designing</li>
+                <li>DOPsoft software</li>
+            </ul>
+            <hr>
+
+            <h1>Social Skills</h1>
+            <ul>
+                <li>Excellent Communication</li>
+                <li>Project Management</li>
+                <li>Able to work in multiculture environment</li>
+                <li>Good analytical ability</li>
+                <li>Event Management</li>
+            </ul>
+            <hr>
+
+            <h1>Projects</h1>
+            <div class="portfolio_container container swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events swiper-container-css-mode">
+                <div class="swiper-wrapper" id="swiper-wrapper-420fbd4cc5fa1251" aria-live="polite"><div class="portfolio_content grid swiper-slide swiper-slide-duplicate swiper-slide-prev" data-swiper-slide-index="3" style="width: 768px;" role="group" aria-label="1 / 6">
+                <img src="assets/img/Social Media WebApp.png" alt="" class="portfolio_img">
+      
+                <div class="portfolio_data">
+                  <h3 class="portfolio_title">Contact Management System - C Programming </h3>
+                  <p class="portfolio_description"> A C program manages contact data with a 'contact' structure, file handling ("contact.dll"), a menu offering add, list, search, edit, delete operations, and screen clearing and input capture functions.</p>
+               
+                  <a href="https://github.com/adityashirsale/Contact-Management-System" class="button button--flex button--small portfolio_button">
+                    <div class="buttons">
+                        <button class="btn">Demo</button>
+                        
+                    </div>   
+                    <i class="uil uil-arrow-right button_icon"></i>
+                  </a>  
+                    </div>
+                  </div>
+                 
+      
+              <!--============PORTFOLIO 1 ===============================-->
+              <div class="portfolio_content grid swiper-slide swiper-slide-active" data-swiper-slide-index="0" style="width: 768px;" role="group" aria-label="2 / 6">
+                <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
+      
+                <div class="portfolio_data">
+                  <h3 class="portfolio_title">Design and Development of HMI based Energy Monitoring System</h3>
+                  <p class="portfolio_description">Designed and developed an HMI-based energy monitoring system, enabling real-time consumption insights. Led cross-functional teams, designed intuitive interface, and implemented data analysis algorithms. Recognized for innovation and effective resource management. Strengthened collaboration, project management, and sustainable solution skills.</p>
+      
+                <a href="https://drive.google.com/file/d/1HeS0DiY6pBW0FVHVilJ7XCl58WYR-tlB/view?usp=sharing" class="button button--flex button--small portfolio_button">
+                    <div class="buttons">
+                        <button class="btn">Demo</button>
+                        
+                    </div>  
+                <i class="uil uil-arrow-right button_icon"></i>
+              </a>  
+                </div>
+              </div>
+      
+      
+              <!--============PORTFOLIO 2 ===============================-->
+              <div class="portfolio_content grid swiper-slide swiper-slide-next" data-swiper-slide-index="1" style="width: 768px;" role="group" aria-label="3 / 6">
+                <img src="assets/img/Doconstro.jfif" alt="" class="portfolio_img">
+      
+                <div class="portfolio_data">
+                  <h3 class="portfolio_title">Personal Portfolio Website</h3>
+                  <p class="portfolio_description">Responsive portfolio website adaptable on all devices briefing about my Education, Qualification, Projects.</p>
+      
+                <a href="" class="button button--flex button--small portfolio_button" target="_blank">
+                    <div class="buttons">
+                        <button class="btn">Demo</button>
+                        
+                    </div>
+                <i class="uil uil-arrow-right button_icon"></i>
+              </a>  
+                </div>
+              </div>
+      
+      
+              
+              
+      
+                  <!--Add Arrows==========================-->
+                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-420fbd4cc5fa1251">
+                      <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+                    </div>
+                    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-420fbd4cc5fa1251">
+                      <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+                    </div>
+      
+                  <!--===========Add Pagination=================-->
+                  <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0" role="button" aria-label="Go to slide 1"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 3"></span><span class="swiper-pagination-bullet" tabindex="0" role="button" aria-label="Go to slide 4"></span></div>
+                  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+
+            <hr>
+            <div class="Contact info"></div>
+            <h1>Contact</h1>
+            <form action="https://formsubmit.co/adityashirsale7@gmail.com" class="Contact info" method="POST">
+                <input type="text" name="Name" placeholder="Name" required>
+                <input type="email" name="Email" placeholder="Email" required>
+                <input type="text" name="Project" placeholder="Project" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <div class="buttons">
+                    <button class="btn">Submit</button>
+                    
+                </div>
+                
+            </form>
+            
+
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Aditya's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>+91-7798030125</li>
+                    <li>adityashirsale7@gmail.com</li>
+                </ul>
+            </div>
+            
+        </div>
+        <div class="footer-rights">
+            &copy; adityashirsale.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Electrical Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
